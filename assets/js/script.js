@@ -1,10 +1,6 @@
-/*jshint esversion: 6*/ 
+/* jshint esversion: 6 */ 
 
 function scrollUp() {
-
-    let scrollPos;
-
-    let visi = document.querySelector(".botao");
 
     //window.scrollTo(0, 0);
 
@@ -15,15 +11,25 @@ function scrollUp() {
     });
 
     scrollPos = window.scrollY;
-
-    if (scrollPos === 0) {
-
-        console.log(window.scrollY);
-        
-        visi.classList.add("visi");
-
-    } 
+ 
 }
 
-//console.log(typeof window.scrollY);
+function turnInvisible () {
+
+    let scrolled = window.scrollY;
+    let btn = document.querySelector(".botao");
+
+    if (scrolled === 0) {
+
+        btn.classList.remove("visi");
+        btn.classList.add("invi");
+        
+
+    } else {
+
+        btn.classList.remove("invi");
+        btn.classList.add("visi");
+    }
+}
+
 
