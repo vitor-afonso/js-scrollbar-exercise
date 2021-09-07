@@ -15,13 +15,13 @@
     bottom: 10px;
     background-color: #BBB;
     cursor: pointer;
-    visibility: visible;
+    display: none;
 }
 
 .invi {
-    visibility: hidden;
+    display: none;
 }
 
 .visi {
-    visibility: visible;
+    display: block;
 }
